@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RPG GAME</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+    <!-- Added link to images -->
+   <link rel="stylesheet" type="text/css" href="assets/images">
+  
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+   <link href="https://fonts.googleapis.com/css?family=Bigelow+Rules" rel="stylesheet">
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+<!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+   
+</head>
+
+<body>
+		
+<div class="head screen1">
+    <p class="text-center">Harry Potter Trivia</p>
+    <h1 class="text-center">Are you a Harry Potter Fan?</h1>
+
+	<h1 class="text-center"> Wave your wand and choose your answer!</h1>
+	<h1 class="text-center"> You have 3 minutes once you press the Start Button. Good Luck on your OWLS!!
+	<input type="button" id="start" value="Start" onlick="sum_values()">
+	</h1>
+	
+
+</div>
+
+<div class="container">
+
+    <div class="row screen2">
+      
+			<div class="col-md-7">
+    		<div class="panel panel-default">
+            <div class="text-center">
+
+              	
+				<div>Time Remaining: <span id="time">03:00</span> minutes!</div>
+
+			<br><br>
+			
+				<form>
+               		 <p>Q1: What was Professor Snape's patrounus?</p>
+            	
+           			 <label class="radio-inline">
+           			 <input type="radio" name="optradio">Rabbit</label>
+           			 <label class="radio-inline">
+           			 <input type="radio" name="optradio">Dragon</label>
+           			 <label class="radio-inline">
+           			 <input type="radio" name="optradio">Stag</label>
+           			 <label class="radio-inline">
+           			 <input type="radio" name="optradio">Doe</label>
+           		</form>
+           	<br><br>
+           		
+           		<form>
+           		     <p>Q2: What was the name of Hagrid's half-brother?</p>
+           		
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">Henry</label>
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">Ron</label>
+           			<label class="radio-inline">
+					<input type="radio" name="optradio">Grawp</label>
+					<label class="radio-inline">
+					<input type="radio" name="optradio">Chewwie</label>
+				</form>
+			<br><br>
+
+				<form>
+           		    <p>Q3: Which brother of Ron Weasly worked with Dragons?</p>
+           		
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">Fred</label>
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">Harry</label>
+           			<label class="radio-inline">
+					<input type="radio" name="optradio">George</label>
+					<label class="radio-inline">
+					<input type="radio" name="optradio">Charles</label>
+				</form>
+			<br><br>
+
+				<form>           		
+           		     <p>Q4: Who was in love with Ron Weasly?</p>
+           		
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">Lavender Brown</label>
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">Luna Lovegood</label>
+           			<label class="radio-inline">
+					<input type="radio" name="optradio">Bellatrix Lestrange</label>
+					<label class="radio-inline">
+					<input type="radio" name="optradio">Minerva McGonagall</label>
+            	</form>
+			<br><br>
+
+            	<form>
+           		     <p>Q5: What are Ravenclaw's house colors?</p>
+           		
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">Yellow, Red</label>
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">Blue, Silver</label>
+           			<label class="radio-inline">
+					<input type="radio" name="optradio">Purple, Gold</label>
+					<label class="radio-inline">
+					<input type="radio" name="optradio">Orange, Green</label>
+				</form>     			
+			<br><br>
+
+				<form>
+           		     <p>Q6: Who stole the necklace horcrux?</p>
+           		
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">RAB</label>
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">JFK</label>
+           			<label class="radio-inline">
+					<input type="radio" name="optradio">TBN</label>
+					<label class="radio-inline">
+					<input type="radio" name="optradio">RJB</label>
+				</form>
+			<br><br>
+
+				<form>
+           		     <p>Q7: Who did Hermonie go to the Yule Ball with?</p>
+           		
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">Barty Crouch Jr.</label>
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">Seamus Finnigan</label>
+           			<label class="radio-inline">
+					<input type="radio" name="optradio">Viktor Krum</label>
+					<label class="radio-inline">
+					<input type="radio" name="optradio">Quirinus Quirrell</label>
+				</form>
+			<br><br>
+
+				<form>
+           		     <p>Q8: What was the name of the song Harry and Hermonie dances too?</p>
+           		
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">Sweet Child of Mine</label>
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">Mazurka in B-flat major</label>
+           			<label class="radio-inline">
+					<input type="radio" name="optradio">Two Nocturnes</label>
+					<label class="radio-inline">
+					<input type="radio" name="optradio">The Lyre of Orpheus</label>
+				</form>
+			<br><br>
+
+				<form>
+           		     <p>Q9: Who was the first victim to the Basilisk?</p>
+           		
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">Nearly Headless Nick</label>
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">Moaning Myrtle</label>
+           			<label class="radio-inline">
+					<input type="radio" name="optradio">Cornelius Fudge</label>
+					<label class="radio-inline">
+					<input type="radio" name="optradio">Argus Filch</label>
+				</form>
+			<br><br>
+
+				<form>
+           		     <p>Q10: Who killed Nagini?</p>
+           		
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">Neville</abel>
+           			<label class="radio-inline">
+           			<input type="radio" name="optradio">Sirius</label>
+           			<label class="radio-inline">
+					<input type="radio" name="optradio">Harry</label>
+					<label class="radio-inline">
+					<input type="radio" name="optradio">Draco</label>
+				</form>
+			<br><br>
+
+			<input type="button" id="next" value="Next" onlick="sum_values()">
+			
+			<br><br>
+	
+			</div>
+			</div>
+			</div>
+	</div>
+</div>
+
+<div class="container2">
+
+    <div class="row screen3">
+      
+			<div class="col-md-4">
+    		<div class="panel panel-default">
+            <div class="text-center">
+
+	<div id="Answers">
+
+	<br>
+ 		<div class="answer">
+ 			  <label for="answer_1">Answer Q1: Doe</label>
+  		</div>
+  		
+  		<div class="answer">
+  	     	  <label for="answer_2">Answer Q2: Gwarp</label>
+ 		</div>
+		
+		<div class="answer">
+  	     	  <label for="answer_3">Answer Q3: Charles</label>
+ 		</div>
+
+ 		<div class="answer">
+  	     	  <label for="answer_4">Answer Q4: Lavender Brown</label>
+ 		</div>
+
+ 		<div class="answer">
+  	     	  <label for="answer_5">Answer Q5: Blue, Silver</label>
+ 		</div>
+
+ 		<div class="answer">
+  	     	  <label for="answer_6">Answer Q6: RAB</label>
+ 		</div>
+
+ 		<div class="answer">
+  	     	  <label for="answer_7">Answer Q7: Viktor Krum</label>
+ 		</div>
+
+ 		<div class="answer">
+  	     	  <label for="answer_8">Answer Q8: The Lyre of Orpheus</label>
+ 		</div>
+
+ 		<div class="answer">
+  	     	  <label for="answer_9">Answer Q9: Moaning Myrtle</label>
+ 		</div>
+
+ 		<div class="answer">
+  	     	  <label for="answer_10">Answer Q10: Neville</label>
+ 		</div>
+
+	</div>
+
+ <div class="score">
+        <div><h3>Correct:</h3><span id="correct"></span></div>
+        <div><h3>Incorrect:</h3><span id="wrong"></span></div>
+        <div><h3>Unanswered:</h3><span id="unanswered"></span></div>
+        
+ </div>
+			
+   
+
+    <script type="text/javascript">
+
+    	
+
+</script>
+</body>
+</html>
